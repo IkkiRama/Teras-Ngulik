@@ -1,0 +1,11 @@
+# Set Laragon PHP to 8.3+ before enabling. Add teras-ngulik.test -> 127.0.0.1
+# using Laragon's own virtual-host management. The repository root is private.
+<VirtualHost *:80>
+    ServerName teras-ngulik.test
+    DocumentRoot "D:/laragon/www/Teras Ngulik/public"
+    <Directory "D:/laragon/www/Teras Ngulik/public">
+        AllowOverride All
+        Require all granted
+        Options -Indexes +FollowSymLinks
+    </Directory>
+</VirtualHost>

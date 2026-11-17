@@ -1,0 +1,11 @@
+# Laravel must be served from public/. This fallback protects repository files
+# when a local Apache document root accidentally points at the project root.
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^(?:\.env|artisan|composer\.(?:json|lock)|package(?:-lock)?\.json|.*\.sqlite(?:-.*)?)$ - [F,L,NC]
+    RewriteRule ^(?:app|bootstrap|config|database|docs|node_modules|resources|routes|storage|tests|vendor|\.git|\.ai|\.agents)(?:/|$) - [F,L,NC]
+    RewriteRule ^$ public/ [L]
+    RewriteCond %{REQUEST_URI} !/public/
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
+Options -Indexes

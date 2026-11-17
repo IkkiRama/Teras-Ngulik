@@ -1,0 +1,26 @@
+{
+  "brand": "Teras Ngulik",
+  "version": "2026-11-02",
+  "colors": {
+    "vividBlue": "#5B86F6",
+    "ctaBlue": "#2F55D4",
+    "butter": "#FFE7A0",
+    "ink": "#22263A",
+    "lavender": "#B9A7F7",
+    "mint": "#BCECD6",
+    "peach": "#FFD2BC",
+    "softBlue": "#DCE8FF",
+    "surfaceLight": "#FFFFFF",
+    "surfaceSubtle": "#F6F8FF",
+    "textLightMode": "#22263A",
+    "textDarkMode": "#F7F8FE"
+  },
+  "typography": {
+    "ui": "Plus Jakarta Sans",
+    "code": "JetBrains Mono",
+    "fallback": "system-ui, sans-serif"
+  },
+  "radiusPx": {"sm": 8, "md": 12, "lg": 16, "xl": 24},
+  "motion": {"reducedMotionRespected": true, "animationStyle": "subtle and functional"},
+  "logo": {"file": "assets/teras-ngulik-logo-icon-reference.png", "isIconOnly": true, "brandTextRenderedSeparately": true}
+}

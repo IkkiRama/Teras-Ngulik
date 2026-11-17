@@ -1,0 +1,1 @@
+.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.form-grid .field{min-width:0}.platform-section .card{margin-bottom:20px}@media(max-width:640px){.form-grid{grid-template-columns:1fr}}

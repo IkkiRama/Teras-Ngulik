@@ -1,0 +1,13 @@
+import {readFileSync} from 'node:fs';
+import vm from 'node:vm';
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import ts from 'typescript';
+const source=readFileSync(new URL('../../resources/js/features/learning/scrim-engine.ts',import.meta.url),'utf8');
+const compiled=ts.transpileModule(source,{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.CommonJS}}).outputText;
+const sandbox={exports:{}};vm.runInNewContext(compiled,sandbox);const reconstruct=(m,t)=>JSON.parse(JSON.stringify(sandbox.exports.reconstruct(m,t)));
+const manifest={schema_version:1,initial_files:[{path:'main.js',content:'const x = 10;'},{path:'style.css',content:''}],duration_ms:40000,events:[{t:25000,seq:1,type:'replace',path:'main.js',content:'const x = 10; // 👋 café'},{t:26000,seq:2,type:'file_open',path:'style.css'},{t:27000,seq:3,type:'replace',path:'style.css',content:'h1 { color: blue; }'},{t:35000,seq:4,type:'replace',path:'main.js',content:'const x = 15; // 你好'}]};
+test('paused learner edits never modify the immutable instructor timeline',()=>{const before=JSON.stringify(manifest);const fork=reconstruct(manifest,25000);fork.files[0].content='const x = 99;';assert.equal(reconstruct(manifest,25000).files[0].content,'const x = 10; // 👋 café');assert.equal(reconstruct(manifest,35000).files[0].content,'const x = 15; // 你好');assert.equal(JSON.stringify(manifest),before);});
+test('seeking backwards, forwards and across unicode edits is deterministic',()=>{for(const t of [0,25000,27000,40000,26000,0,35000,25000]){const first=reconstruct(manifest,t);const second=reconstruct(manifest,t);assert.deepEqual(first,second);}assert.equal(reconstruct(manifest,26000).active,'style.css');assert.equal(reconstruct(manifest,26000).files[1].content,'');assert.equal(reconstruct(manifest,27000).files[1].content,'h1 { color: blue; }');});
+test('checkpoint replay matches full replay without mutating snapshots',()=>{const m={...manifest,checkpoints:[{t:27000,files:{'main.js':'const x = 10; // 👋 café','style.css':'h1 { color: blue; }'}}]};for(const t of [0,26000,27000,34999,35000,40000])assert.deepEqual(reconstruct(m,t),reconstruct(manifest,t));const frame=reconstruct(m,35000);frame.files[0].content='edited';assert.equal(m.checkpoints[0].files['main.js'],'const x = 10; // 👋 café');});
+test('same-millisecond events after a checkpoint preserve their sequence',()=>{const m={schema_version:1,initial_files:[{path:'main.js',content:''}],duration_ms:20000,events:[{t:15000,seq:1,type:'replace',path:'main.js',content:'first'},{t:15000,seq:2,type:'replace',path:'main.js',content:'last'}],checkpoints:[{t:15000,files:{'main.js':'first'}}]};assert.equal(reconstruct(m,15000).files[0].content,'last');});

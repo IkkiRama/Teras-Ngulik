@@ -1,0 +1,72 @@
+{
+ "brand": "Teras Ngulik",
+ "announcementBar": {"enabled": true, "adminConfigurable": true, "maxVisible": 1},
+ "publicMenu": [
+   {"label":"Belajar","items":[
+     {"label":"Course","href":"/belajar/course"},
+     {"label":"Akademi","href":"/belajar/akademi"},
+     {"label":"Learning Path","href":"/belajar/learning-path"},
+     {"label":"Ebook","href":"/belajar/ebook"},
+     {"label":"Kuis Mandiri","href":"/belajar/kuis"},
+     {"label":"Podcast","href":"/belajar/podcast"},
+     {"label":"Video Pendek","href":"/belajar/video-pendek"}
+   ]},
+   {"label":"Labs","items":[
+     {"label":"Coding Playground","href":"/labs/playground"},
+     {"label":"Coding Lab","href":"/labs/coding-lab"},
+     {"label":"Coding Challenge","href":"/labs/challenge"},
+     {"label":"Code Review","href":"/labs/code-review"},
+     {"label":"Game","href":"/labs/game"}
+   ]},
+   {"label":"Komunitas","items":[
+     {"label":"Artikel","href":"/artikel","isDirectLink":true,"filterCategoriesInsidePage":true},
+     {"label":"Diskusi","href":"/komunitas/diskusi"},
+     {"label":"Project Showcase","href":"/komunitas/showcase"},
+     {"label":"Mentorship","href":"/komunitas/mentorship"},
+     {"label":"Galeri","href":"/komunitas/galeri"}
+   ]},
+   {"label":"Program","items":[
+     {"label":"Bootcamp","href":"/program/bootcamp"},
+     {"label":"Event","href":"/program/event"},
+     {"label":"Hackathon & Kompetisi","href":"/program/kompetisi"},
+     {"label":"Karier","href":"/program/karier"},
+     {"label":"Partner","href":"/program/partner"}
+   ]},
+   {"label":"Marketplace","items":[
+     {"label":"Kelas Premium","href":"/marketplace/kelas"},
+     {"label":"Bundling","href":"/marketplace/bundling"},
+     {"label":"Langganan","href":"/marketplace/langganan"},
+     {"label":"Merchandise","href":"/marketplace/merchandise"},
+     {"label":"Preorder","href":"/marketplace/preorder"},
+     {"label":"Promo","href":"/marketplace/promo"}
+   ]},
+   {"label":"Tentang","items":[
+     {"label":"Tentang Kami","href":"/tentang"},
+     {"label":"Bantuan","href":"/bantuan"},
+     {"label":"Kontak","href":"/kontak"},
+     {"label":"Dokumentasi","href":"/dokumentasi"}
+   ]}
+ ],
+ "footerRoutes": ["/syarat-ketentuan","/kebijakan-privasi","/kebijakan-refund","/aturan-komunitas","/aksesibilitas","/whistleblowing","/bantuan/faq"],
+ "globalSearch": "/cari",
+ "learnerDashboard": [
+   {"label":"Ringkasan","href":"/dashboard"},
+   {"label":"Kelas Saya","href":"/dashboard/kelas"},
+   {"label":"Learning Path Saya","href":"/dashboard/learning-path"},
+   {"label":"Bootcamp & Classroom","href":"/dashboard/bootcamp"},
+   {"label":"Lab & Proyek","href":"/dashboard/proyek"},
+   {"label":"Notebook & Bookmark","href":"/dashboard/catatan"},
+   {"label":"Review Harian","href":"/dashboard/review"},
+   {"label":"XP & Leaderboard","href":"/dashboard/leaderboard"},
+   {"label":"Bara & Reward","href":"/dashboard/reward"},
+   {"label":"Sertifikat","href":"/dashboard/sertifikat"},
+   {"label":"Profil & Portofolio","href":"/dashboard/profil"},
+   {"label":"Pengaturan","href":"/dashboard/pengaturan"}
+ ],
+ "notes": [
+   "Most public submenus are direct links at 2nd level; never force nested menu layers.",
+   "Scrim is a lesson type inside Course, not a navbar item.",
+   "Classroom belongs to Bootcamp, not a navbar item.",
+   "Article category and by-author filters live inside /artikel."
+ ]
+}

@@ -1,0 +1,152 @@
+aku mau bikin website yang mana bisa orang-orang bisa belajar koding secara interaktif (tingkat interaktifnya itu beda-beda) (anak-anak interaktif banget dan base on game) (anak SMP SMA juga beda) (kuliahan juga beda)
+
+aku pengen waktu ada vidionya, pas di play, ketika di pause, apa yang ada di display di vidio itu langsung berubah jadi kodingan dan bisa kita copy (aku lupa itu pakai apa)
+
+kira-kira namanya apa ya yang cocok, aku mau ini tuh gratis rata-rata course nya, kalaupun bayar ya bayar yang beneran bagus gitu dan masih terjangkau?
+
+aku pengen fiturnya itu ada
+1. Course (nanti admin bia pilin mau insert materi vidio/dokumen/link buat download tool atau apa gitu)
+2. Artikel (nanti ada kategori, nampilin per kategori, per user juga, bisa masuk ke banyak kategori)
+3. Komunitas (kaya sosmed gitu) (kalau bisa nanti konek ke tele / wa komunitas supaya kalau ada yang posting bisa tau gitu (bisa ngga ya kira-kira?))
+4. Komentar Artikel dan Komunitas, beranak ya itu komentarnya kaya youtube
+5. aku rencananya mau bikin kaya youtube gitu buat detail coursenya (nanti kalau di pencet i, langsung kaya youtube behaviornya, pokoknya semuanya lah mirip youtube, paling nanti yang beda ngga ada like dislike, share, download dll (CTA nya youtube), ntar bg nya juga dibikin kaya youtube (yang ada kilau"nya gitu di sekitar frame youtube), nanti kan kalau pakai server youtube pasti ada tulian tonton di youtube, nah itu mau aku ubah (kurleb kaya kodingan yang aku kasih ke kamu, supaya nanti ngga bia di tonton di youtube terus di tambah ke playlist terus di sebarin sembarangan gitu) ) (aku juga mau up vidionya di YT, terus di tampilin ke website, supaya servernya ngga jebol)
+6. Ebook
+7. Dashboard Admin
+8. Kuis (beda sama kuis di course)
+9. Lab
+10. Kontak
+11. Payment gate away (kalau pakai midtrans bisa ngga ya kalau dibikin kaya supercell gitu tampilannya? biar ngga template kaya website lainnya), pakai embeded ya, jangan yang popup
+12. Marketplace, nanti ada pre order dan order biasa
+13. Event, ada yang berbayar dan ada yang gratis
+14. bundling kelas
+15. Fitur-fitur kaya subscription, beli kelas (nanti ada kelas yang bisa di beli, ada juga yang khusus subcription), diskon, patungan (nanti input email aja  pas CO) serta fitur-fitur utilitas kaya dark mode, searching, grafik kemampuan user gitu (pakai yang bentuk prima/segi 5 gitu (itu namanya apa ya ?)), generate avatar dalam bentuk svg, tentang, tujuan, syarat ketentuan, kebijakan privasi dll supaya gamifikasi nya terjadi.
+16. bootcamp
+17. learning path
+18. reward
+19. karir
+20. partner (kalau mau ada yang mau partner bikin kegiatan gitu)
+21. Whistleblowing
+22. Syarat dan Ketentuan
+23. Kebijakan Privasi
+24. Bantuan
+25. Bahasa inggris (ini gimana ya ? soalnya kan ngga bisa langsung konversi ke inggris kaya pakai google translate, masa iya nanti pakai JSON ? beneran ngga bia ya kalau langung translate ?)
+26. Customor Servis
+27. Accebility tool biar ramah disabilitas, bisa pakai plugin atau bikin sendiri
+28. sertifikat, bentuknya HTML aja dan (bisa di download dalam JPG/PNG)
+29. Dokumentasi buat API dan website nya (kaya font nya apa, warnanya apa saja gitu, prinsip pengembangannya gimana, )
+30. Vidio pendek kaya reels gitu
+31. Game (apa aja ya enaknya ?)
+32. Podcast
+33. Galeri
+
+apalagi ya kira-kira"
+
+nanti itu podcast, artikel, dll ada juga ya yang khuusus yang udah subs
+
+aku pengen UI UX nya pakai yang terbaru dan lagi trend, banyak animasi dan banyak interaksi, pakai skeleton loading, warna" nya pastel, navigasi nya gampang. buat pertama kali itu ada tutorialnya (kaya walktrhoug gitu)
+
+UI UX dari dashboard usernya dan adminnya bagus, kaya contoh di gambar
+
+aku juga pengen ada kuis ABCAN dan koding interaktif kaya codewar gitu
+
+ada tugas akhirnya juga, ABCAN dan 
+
+ABCAN nya (sesuaikan juga ya, kalau kuliah bisa sampe E opsinya, kalau SD cukup D gitu)
+
+aku mau fokuskan akademinya ke
+1. intro to coding buat anak-anak, SMP, SMA dan kuliah
+2. Data Analitik & Science
+3. Cyber Security
+4. Web App Developer
+
+
+Aku pengen juga bikin lab buat uji coba dan latihan
+
+login nya pakai google, tach stack nya apa saja ya biar murah, cepat, gratis, mudah dan mudah di scale up
+
+kelas yang cocok buat subs sama beli apa ya contohnya ?
+
+kala home nya tambahin ilustrasi kaya di vidio bagus ngga ya ?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+aku pengen waktu ada vidionya, pas di play, ketika di pause, apa yang ada di display di vidio itu langsung berubah jadi kodingan dan bisa kita copy (aku lupa itu pakai apa)
+
+
+maksud dari itu tuh aku pengen implementasikan seperti scrimba yang bikin scrims gitu
+
+Cara kerjanya
+Scrimba menggunakan teknologi yang disebut scrims, yaitu rekaman aktivitas coding yang bukan sekadar video biasa.
+1. Instruktur merekam aktivitas coding di editor.
+2. Ketika video di-pause, kamu bisa mengklik kode yang tampil.
+3. Kamu bisa mengedit, menghapus, atau menambahkan kode.
+4. Ketika video di-play kembali, rekaman melanjutkan aktivitas dari kondisi aslinya, bukan dari perubahan yang kamu buat.
+Jadi, perubahan yang kamu lakukan bersifat sementara terhadap sesi interaktif tersebut.
+
+okey, tambahkan
+
+Portfolio Builder
+Code Review
+Progress Resume
+Notebook & Bookmark
+Learning Diagnostic
+Spaced Repetition (ini mau dibikin kaya gimana ya ?)
+Project Showcase
+Mentorship
+Hackathon & Competition
+
+Classroom (ini pakai bootcamp aja, nanti kan di page admin user nya bakal ada classroom gitu, mirip lah kaya course itu konsepnya, buat bagi materi, dokumen dll)
+
+nanti kalau ada diskon (entah yang patungan/diskon biasa) kasih tau di atas navbar ya
+
+Supabase PostgreSQL gratis ngga ? bisa ngga di hosting di unlimited hosting yang ratusan ribu doang ?
+
+oh iya itu email juga harus di aktivasi dulu ya dan tambahin fitur newsletter, auto daftarin aja ke newsletter itu new usernya, user juga harus bisa ubah" profilnya ya, ganti sandi harus pakai kode otp ke email, tidak bisa ganti email. pakai username buat indentik, soalnya kalau nama bakal ada yang sama itu namanya
+
+
+"Keempat, game harus mendukung tujuan belajar. XP, badge, dan animasi sebaiknya diberikan atas keterampilan yang benar-benar dikuasai, bukan sekadar waktu menonton atau aktivitas login."
+
+iya nanti XP, badge, sertifikat buat orang yang udah lulus dari kelas aja, game buat fun aja. nanti xp bisa di tuker sama kelas / merch gitu, kasih challange juga buat dapetin XP tambahan, kaya login tiap minggu atau apa gitu
+
+tambahin juga fitur buat konek ke linkedin, supaya bisa auto tambahin sertifikat tanpa ribet
+
+tambahin juga fitur share artikel
+
+i think tambahin biru yang agak nge jrenk tapi masih pastel, itu birunya terlalu muda
+
+
+aku masih kurang cocok sama namanya, coba carikan nama lain, ngga usah ada code" nya gitu, kaya scrimba, kan ngga ada kata codenya. nanti juga bakal aku kembangkan lagi jadi ke arah finance, penelitian gitu pakai stata, atau r gitu, fokus ke 5 berarti itu ya ?
+
+
+
+
+aku pengennya pakai full gratis teknologi nya dan bisa pakai unlimited hosting ratusan ribu
+
+warnanya bagus, tapi tolong tambahin Butter #FFE7A0, Ink #22263A ya
+
+"Sistem dapat mengirim undangan melalui email, tetapi setiap peserta harus membuka checkout dan membayar bagiannya sendiri. Akses course baru diberikan sesuai aturan setelah semua pembayaran yang dibutuhkan berhasil."
+
+ngga, bayarnya 1 aja, ntar isi email, baru di tambahkan email itu ke kelas, auto tambahin, kalau email itu bukan user ya suruh ganti gitu
+
+Cloudflare R2 buat apa ya
+
+carikan nama lain coba beserta filosofinya, yang cocok aja sama orang indo
+
+
+aku mau nya Teranala/Teranala, kalau jelanara, kalimat jela nya agak susah buat di ingat, begitu juga Teranala, nalanya yang susah di ingat dan di baca, kalau teranara gimana ? kalau ngga pakai kata biasa aja kaya sekolah koding gitu, codepolitan
+
+
+oh iya, kayaknya itu xp buat leaderboard aja, buat yang di tuker ke kelas/merch pakai poin aja, jadi nanti kalau nyelesaikan kelas/apa nanti dapat poin sama XP gitu, mungkin jangan poin doang lah ya namanya
+
+aku juga pengen buat fitur Coding Playground gitu, ada yang gratis dan berbayar
